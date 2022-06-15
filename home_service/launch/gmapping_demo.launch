@@ -1,0 +1,17 @@
+<!-- Launch gmapping with tuned parameters -->
+
+<launch>
+<param name="use_sim_time" value="true" />
+<node pkg="gmapping" type="slam_gmapping" name="gmapping_thing" output="screen" >
+    <param name="scan" value="scan" />
+    <param name="odom_frame" value="odom" />
+    <param name="angularUpdate" value="0.2" />
+    <param name="linearUpdate" value="0.1"/>
+    <param name="particles" value="50"/>
+    <param name="xmin" value="-10.0"/>
+    <param name="ymin" value="-3.0"/>
+    <param name="xmax" value="10.0"/>
+    <param name="ymax" value="10.0"/>
+    <param name="delta" value="0.05"/> 
+</node>
+</launch>
