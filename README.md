@@ -128,9 +128,10 @@ $ cd catkin_ws/src/
 $ catkin_init_workspace
 ```
 
-#### 2. Clone the project in catkin_ws/src/.
+#### 2. Clone the project in catkin_ws/src/ and move its contents to src/.
 ```sh
 $ git clone https://github.com/elena-ecn/RoboticsND-Home-Service-Robot.git
+$ sudo mv RoboticsND-Home-Service-Robot/* ./
 ```
 
 #### 3. Build the packages.
